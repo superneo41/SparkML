@@ -2,7 +2,8 @@ from pyspark.ml.tuning import CrossValidator
 
 def tuning(model):
   '''
-  a function to output the performance of different Hyper-parameter sets
+  CrossValidator from pyspark.ml.tuning doesn't give the best Hyper-parameter setting.
+  This is a function to output the performance of different Hyper-parameter sets
   
   input: a CrossValidator fitted model
   output: a dictionary with keys: hyper-para settings, values: metrics
